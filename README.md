@@ -31,7 +31,7 @@
 >
 > - **Asegúrese que cada nuevo método o atributo funcione.** A lo más, podría fallar el último método u operador implementado; al comentarlo, el resto debe funcionar.
 > - **Siga las convenciones solicitadas.** Los nombres de clases, namespaces y métodos deben coincidir exactamente con los especificados. Un uso incorrecto podría indicar el uso de herramientas automáticas.
-> - Si la clase es totalmente inoperativa o contiene errores críticos (como memory leaks, crashes o funcionalidad básica incorrecta), **la calificación máxima podría reducirse hasta un 60%.**
+> - Si la clase es totalmente inoperativa o contiene errores críticos (como memory leaks, crashes o funcionalidad básica incorrecta), **la calificación podría reducirse hasta un 60%.**
 
 ---
 
