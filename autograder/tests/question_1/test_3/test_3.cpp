@@ -6,7 +6,7 @@
 #include "geodesy.h"
 
 static void test_3() {
-    geodesy::GeoMeasurement temporal({0.18, 0.19}, 300, "Temporal");
+    geodesy::GeoMeasurement temporal({0.18, 0.19}, 2, 300, "Temporal");
 
     // Robar recursos del objeto temporal
     geodesy::GeoMeasurement movido = std::move(temporal);

@@ -31,7 +31,7 @@
 >
 > - **Asegúrese que cada nuevo método o atributo funcione.** A lo más, podría fallar el último método u operador implementado; al comentarlo, el resto debe funcionar.
 > - **Siga las convenciones solicitadas.** Los nombres de clases, namespaces y métodos deben coincidir exactamente con los especificados. Un uso incorrecto podría indicar el uso de herramientas automáticas.
-> - Si la clase es totalmente inoperativa o contiene errores críticos (como memory leaks, crashes o funcionalidad básica incorrecta), **la calificación podría reducirse hasta un 60%.**
+> - Si la clase es totalmente inoperativa o contiene errores críticos (como memory leaks, crashes o funcionalidad básica incorrecta), **la calificación máxima podría reducirse hasta un 60%.**
 
 ---
 
@@ -133,21 +133,21 @@ std::cout << copia << "\n";     // Original: 3 angulos, 500 km
 ### Test 3: Constructor de movimiento
 
 ```cpp
-geodesy::GeoMeasurement temporal({0.18, 0.19}, 300, "Temporal");
+geodesy::GeoMeasurement temporal({0.18, 0.19}, 2, 300, "Temporal");
 
 // Robar recursos del objeto temporal
 geodesy::GeoMeasurement movido = std::move(temporal);
 
 std::cout << movido << "\n";        // Temporal: 2 angulos, 300 km
-std::cout << temporal << "\n";      // Temporal: 0 angulos, 0 km
+std::cout << temporal << "\n";      // : 0 angulos, 0 km
 ```
 
 ### Test 4: Operadores y manejo de errores
 
 ```cpp
 // Crear dos mediciones y combinarlas
-geodesy::GeoMeasurement m1({0.20}, 200, "M1");
-geodesy::GeoMeasurement m2({0.21, 0.22}, 300, "M2");
+geodesy::GeoMeasurement m1({0.20}, 1, 200, "M1");
+geodesy::GeoMeasurement m2({0.21, 0.22}, 2, 300, "M2");
 geodesy::GeoMeasurement combinada = m1 + m2;
 
 std::cout << combinada << "\n"; // M1 + M2: 3 angulos, 500 km
